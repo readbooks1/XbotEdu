@@ -36,9 +36,10 @@ public class DriveSubsystem {
 	}
 	
 	public void tankDrive(double leftPower, double rightPower) {
-		// You'll need to take these power values and assign them to all of the motors. As
-		// an example, here is some code that has the frontLeft motor to spin according to
-		// the value of leftPower:
 		frontLeft.set(leftPower);
+		rearLeft.set(leftPower);
+		frontRight.set(rightPower);
+		rearRight.set(rightPower);
 	}
+	
 }
